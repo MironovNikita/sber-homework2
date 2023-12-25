@@ -50,6 +50,7 @@ public class Main {
         phoneDirectory.add("Кроос", "+34263232323");
         phoneDirectory.add("Куртуа", "+34565655656");
 
+        System.out.println("Тестирование метода \"get()\"");
         System.out.println("\nДолжен получиться список из трёх номеров для абонентов по фамилии Модрич: "
                 + phoneDirectory.get("Модрич"));
 
@@ -61,5 +62,8 @@ public class Main {
 
         System.out.println("\nДолжен получиться список из двух номеров для абонентов по фамилии Куртуа: "
                 + phoneDirectory.get("Куртуа"));
+
+        System.out.println("\nВывод всех абонентов телефонного справочника:");
+        phoneDirectory.printBook();
     }
 }
